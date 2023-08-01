@@ -29,5 +29,3 @@ resource "aws_elasticache_subnet_group" "redis_subnet_group" {
 }
 
 
-  subnet_group_name    = aws_elasticache_subnet_group.redis_subnet_group.name
-  security_group_ids   = [aws_security_group.allows_redis.id] 
